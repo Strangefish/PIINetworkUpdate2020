@@ -1,0 +1,790 @@
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+.site-content {
+  max-width: 90%;
+  margin: auto;
+}
+
+/*div {
+  border: 1px solid pink;
+}*/
+
+@media only screen and (max-width: 470px) {
+  .site-content {
+      max-width: 100%;
+  }
+}
+
+body {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  padding-top: 1.3rem;
+}
+
+p,
+li {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Header and Jumbotron */
+
+
+.header h1 {
+
+font-family: 'Kanit', sans-serif;
+font-weight: 700;
+font-size: 2rem;
+}
+
+.jumbotron.slick-slide {
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  background-color: white;
+  max-width: 100%;
+  padding: 0;
+  max-height: 120rem;
+  margin-bottom: 2rem;
+
+}
+
+.jumbotron img {
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content:hover > img {
+  opacity: 0.5;
+}
+
+.header-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.text-overlay {
+  background-color: transparent;
+  border-radius: 10px;
+  position: absolute;
+  width: 90%;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+
+}
+
+.description {
+  max-width: 45%;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+
+
+}
+
+.text-overlay p {
+  font-size: 1.5rem;
+
+}
+
+.btn {
+  color: rgb(255, 125, 51);
+  background-color: white;
+  border: 1px solid rgb(255, 125, 51);
+  font-family: 'Raleway', sans-serif;
+  margin-top: 0.5rem;
+}
+
+.text-overlay a:hover {
+  background-color:  rgb(255, 125, 51);
+  color: black;
+  border: 1px solid black;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.btn-primary:active {
+  background-color: white!important;
+  color: orange!important;
+}
+
+@media only screen and (max-width: 734px) and (min-width: 471px){
+
+.description {
+  max-width: 80%;
+}
+
+.text-overlay p {
+  font-size: 1rem;
+
+}
+
+
+}
+
+
+@media only screen and (max-width: 470px) {
+
+  #main {
+    padding-top: 54px;
+  }
+
+
+  .description h1 {
+
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  }
+
+  .jumbotron.text-overlay {
+    margin: auto;
+    width: 100%;
+  }
+
+
+  .text-overlay p {
+    font-size: 0.8rem;
+
+  }
+
+  .description {
+    max-width: 70%;
+    margin: auto;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+
+  }
+
+  .btn {
+    color: rgb(255, 125, 51);
+    background-color: white;
+    border: 1px solid rgb(255, 125, 51);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
+
+  }
+
+/*Jumbotron image slider*/
+
+
+/* Navigation */
+
+#myNav {
+ position: fixed;
+ top: 0;
+ width: 90%;
+ transition: top 1s;
+}
+
+
+.nav {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 0;
+  position: sticky;
+  background-color: transparent;
+  top: 0;
+  z-index: 3;
+}
+
+.menu {
+  display: flex;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.nav li {
+  width: 20%;
+}
+
+
+.menu a {
+
+text-align: center;
+border: 0.2px solid white;
+border-radius: 10px;
+padding: 1rem 0;
+width: 100%;
+background-color: black;
+display: block;
+color: rgb(255, 125, 51);
+
+}
+
+
+a:hover {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-color: rgb(255, 125, 51);
+  transition-duration: 0.3s;
+}
+
+
+ul.menu {
+  margin-bottom: 0;
+}
+
+.dropdown {
+  display: block;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  width: 100%;
+  z-index: 7;
+  margin-left: -50%;
+}
+
+.dropdown:hover > .dropdown-content {
+  display: unset;
+}
+
+.dropdown:hover img {
+  opacity: 0.1;
+}
+
+/* Mobile Menu */
+
+
+
+
+
+@media only screen and (min-width: 471px) {
+
+
+
+.mobile-nav {
+  display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .desktop.nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    background-color: white;
+    border-top: 5px solid rgb(255, 125, 51);
+    border-bottom: 5px solid rgb(255, 125, 51);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    display: flex;
+
+
+  }
+
+  button {
+    padding: 0!important;
+    background-color: white!important;
+    color: rgb(255, 125, 51)!important;
+    border: none!important;
+    position: absolute!important;
+    top: 0!important;
+    z-index: 10!important;
+    width: 100%;
+    text-align: left;
+  }
+
+
+  ul.mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 9px 0 18px 0;
+    width: 100%;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 6;
+    margin: 50px auto 0 auto;
+  }
+
+
+  .mobile a {
+    text-align: left;
+    border-radius: 0px;
+    padding: 0;
+    margin-bottom: 0;
+    width: 5rem;
+    background-color: white;
+    display: block;
+    color: rgb(255, 125, 51);
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+li.sub {
+  width: 5rem;
+}
+
+
+
+  .mobile.dropdown-content {
+    display: unset;
+    margin-left: 50%;
+  }
+
+  .sub a {
+    margin-left: 10px;
+    width: 100%;
+  }
+
+.mobile a:hover {
+  color: black;
+}
+
+  .fa-bars {
+    font-size: 1.5rem!important;
+    padding: 1rem 0.5rem!important;
+
+  }
+
+.active a{
+  color: black!important;
+}
+
+
+}
+
+
+/* Main Content */
+
+.intro {
+  max-width: 75%;
+  margin: 2rem auto 2.5rem auto;
+}
+
+section {
+  min-width: 100%;
+}
+div.container {
+  max-width: 75%;
+/*border: 5px solid brown;*/
+}
+
+div.row.heading {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+div.row {
+  margin: auto;
+}
+
+div.heading {
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+br.mobile-only {
+  display: none;
+}
+
+.heading h2 {
+  text-align: center;
+  max-width: 100%;
+  background-color: rgb(255, 125, 51);
+  padding: 0.2rem;
+}
+
+.network {
+  margin-top: 3rem;
+}
+
+
+.video {
+  overflow: auto;
+  padding-top: 56.25%;
+  position: relative;
+  object-fit: contain;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+.box {
+  margin-bottom: 2rem;
+}
+
+.box p {
+  font-size: 0.85rem;
+}
+
+.box h3 {
+  font-size: 1.25rem;
+}
+
+.title {
+  margin: 3rem 0 1rem 0;
+}
+
+
+.people {
+  border: 5px solid brown;
+}
+
+.box a.profile {
+  padding: 0.2rem;
+  border: 1px solid rgb(255, 125, 51);
+  text-decoration: none;
+  color: rgb(255, 125, 51);
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+}
+
+.box a.profile:hover {
+  background-color: rgb(255, 125, 51);
+  text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+
+}
+
+.box span {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.name:hover{
+  border-left: 5px solid rgb(255, 125, 51);
+  padding-left: 1rem;
+  max-width: 58rem;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+ol {
+  list-style-type: circle;
+  padding-left: 5rem;
+
+}
+
+span {
+  font-size: 0.8rem;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(255, 125, 51);
+  margin-left: 1rem;
+}
+
+.contact {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+div.logos {
+  max-width: 100%;
+  text-align: center;
+  display: block;
+}
+
+img.first {
+  max-width: 9rem;
+  margin: auto;
+  text-align: center;
+}
+
+img.second {
+  max-width: 9rem;
+  padding-top: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+.conference-logo {
+  margin: auto;
+  padding-bottom: 2rem;
+
+}
+
+
+.conference-logo img {
+  padding: 1rem;
+}
+
+.mail {
+  color: rgb(255, 125, 51);
+  text-decoration: none;
+}
+
+.mail:hover {
+  color: white;
+  background-color: rgb(255, 125, 51);
+  text-decoration: none;
+  padding: 0.1rem 0.2rem;
+  transition-duration: 0.3s;
+  border-radius: 10px;
+}
+
+.weblink {
+  color: rgb(255, 125, 51);
+  text-decoration: none;
+}
+
+.weblink:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 125, 51);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 470px) {
+
+
+          .heading.title {
+            max-width: 90%;
+            margin: 1rem auto 0 auto;
+          }
+
+          .intro,
+          .intro p {
+            width: 100%;
+            margin: auto;
+            padding: 0;
+          }
+
+          .intro p,
+          .conference li {
+          font-size: 0.85rem;
+          }
+
+          div.conference.intro {
+            max-width: 90%;
+            margin: auto;
+          }
+
+          .heading {
+            margin: auto;
+            max-width: 100%;
+            text-align: center;
+
+          }
+
+          .heading h1 {
+            font-size: 1.5rem;
+          }
+
+          div.container {
+            max-width: 100%;
+
+        }
+
+        #events p,
+        #events li {
+          font-size: 0.85rem;
+        }
+
+        ol {
+          list-style-type: circle;
+          padding-left: 2rem;
+
+        }
+
+        img.first {
+          max-width: 9rem;
+          margin: auto;
+        }
+
+        br.mobile-only {
+          display: unset;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+
+        div.page-image {
+          margin: 0 auto;
+        }
+
+    }
+
+/* Partners */
+
+.company-name {
+  width: 100%;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.company-name a {
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: rgb(255, 125, 51);
+  padding: 1rem;
+  border: 1px solid rgb(255, 125, 51);
+  border-radius: 5px;
+}
+
+.company-name a:hover {
+  color: black;
+  background-color: rgb(255, 125, 51);
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/* Conference Page */
+
+.conference {
+  padding-bottom: 5rem;
+  max-width: 65rem;
+  margin: auto;
+}
+
+.page-image {
+  max-width: 40rem;
+  margin: 8rem auto 4rem auto;
+  padding: 0;
+  justify-content: center;
+}
+
+.page-image img {
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 470px) {
+
+  .page-image {
+    max-width: 40rem;
+    margin: 2rem auto 0 auto;
+    padding: 0;
+    justify-content: center;
+  }
+
+}
+
+/*footer*/
+
+.footer {
+  background-color: rgb(255, 125, 51);
+  width: 100%;
+  display: block;
+
+}
+
+
+.footer p,
+.footer a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 250;
+  display: inline-block;
+}
+
+.footer a:hover {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: rgb(255, 125, 51);
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 470px) {
+  .email p {
+    font-size: 0.8rem;
+  }
+
+  .footer p {
+    max-width: 60%;
+  }
+
+  .footer p,
+  .footer a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5px;
+    color: white;
+    font-size: 0.5rem;
+    font-weight: 250;
+    display: inline-block;
+  }
+
+  .footer a:hover,
+  .footer a:focus {
+    color: black;
+    font-weight: bold;
+    font-size: 0.7rem;
+    background-color: rgb(255, 125, 51);
+    transition: 0.3s;
+  }
+
+
+  }
+
+
+
+/*ndropdown testing*/
