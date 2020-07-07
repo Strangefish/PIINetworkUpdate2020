@@ -404,6 +404,11 @@ li.sub {
   margin: 2rem auto 2.5rem auto;
 }
 
+.libraryintro {
+  max-width: 80%;
+  margin: 2rem auto 2.5rem auto;
+}
+
 section {
   min-width: 100%;
 }
