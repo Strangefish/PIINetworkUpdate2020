@@ -398,7 +398,7 @@ li.sub {
 
 .intro {
   max-width: 75%;
-  margin: 2rem auto 2.5rem auto;
+  margin: 2rem auto;
 }
 
 .libraryintro {
@@ -556,6 +556,15 @@ img.second {
   padding-top: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.event-image img {
+  max-width: 100%;
+  padding-bottom: 1rem;
+}
+
+.gallery-strip {
+
 }
 
 
