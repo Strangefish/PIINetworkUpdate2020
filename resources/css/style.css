@@ -608,7 +608,10 @@ img.second {
 .participants {
   background-color: rgb(255, 125, 51);
   text-align: center;
-  font-size: 12rem;
+}
+
+p.participants {
+  font-size: 0.95rem;
 }
 
 @media only screen and (max-width: 470px) {
