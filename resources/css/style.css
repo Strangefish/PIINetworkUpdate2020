@@ -605,6 +605,12 @@ img.second {
   border-radius: 10px;
 }
 
+.participants {
+  background-color: rgb(255, 125, 51);
+  text-align: center;
+  font-size: 12rem;
+}
+
 @media only screen and (max-width: 470px) {
 
 
